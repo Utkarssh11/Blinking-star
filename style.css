@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  #wrapper {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(rgb(0, 0, 0), rgb(14, 32, 99), rgb(0, 0, 0));
+  }
+  
+  .star:nth-child(n+1) {
+      position: absolute;
+      width: 4.5px;
+      height: 4.5px;
+      color: white;
+      animation: starBlink 3s linear 2s infinite;
+  }
+  
+  .star:nth-child(2n+1) {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      color: white;
+      animation: starBlink 3s linear 2s infinite;
+  }
+  
+  @keyframes starBlink {
+      0% {
+          transform: scale(1);
+      }
+      50% {
+          transform: scale(1.5);
+          color: silver;
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+  
+  .moon {
+      position: absolute;
+      width: 50px;
+      height: 48px;
+      color: white;
+  }
+  
